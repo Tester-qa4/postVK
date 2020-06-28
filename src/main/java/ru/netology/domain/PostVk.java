@@ -1,4 +1,4 @@
-package domain;
+package ru.netology.domain;
 
 public class PostVk {
     private String id;
@@ -6,24 +6,87 @@ public class PostVk {
     private String ownerId;
     private String authorId;
     private String createdBy;
-    private int replyOwnerId;
-    private int replyPostId;
-    private boolean friendsOlly;
     private String image;
     private String imageUrl;
     private String date;
     private String copyright;
     private String postType;
-    private int signerId;
-    private boolean canPin;
+    private String report;
+    private String domain;
+    private String querySearch;
+    private int replyOwnerId;
+    private int replyPostId;
     private int repostsQuantity;
+    private int signerId;
+    private int isPinned;
+    private int postponedId;
+    private int ownersId;
+    private int countSearch;
+    private int ofset;
+    private boolean friendsOlly;
+    private boolean canPin;
     private boolean canDelete;
     private boolean canEdit;
-    private String report;
     private boolean isFavorite;
-    private int isPinned;
     private boolean markedAsAds;
-    private int postponedId;
+    private boolean ownersOnly;
+    private boolean extended;
+
+    public String getDomain() {
+        return domain;
+    }
+
+    public void setDomain(String domain) {
+        this.domain = domain;
+    }
+
+    public String getQuerySearch() {
+        return querySearch;
+    }
+
+    public void setQuerySearch(String querySearch) {
+        this.querySearch = querySearch;
+    }
+
+    public int getOwnersId() {
+        return ownersId;
+    }
+
+    public void setOwnersId(int ownersId) {
+        this.ownersId = ownersId;
+    }
+
+    public int getCountSearch() {
+        return countSearch;
+    }
+
+    public void setCountSearch(int countSearch) {
+        this.countSearch = countSearch;
+    }
+
+    public int getOfset() {
+        return ofset;
+    }
+
+    public void setOfset(int ofset) {
+        this.ofset = ofset;
+    }
+
+    public boolean isOwnersOnly() {
+        return ownersOnly;
+    }
+
+    public void setOwnersOnly(boolean ownersOnly) {
+        this.ownersOnly = ownersOnly;
+    }
+
+    public boolean isExtended() {
+        return extended;
+    }
+
+    public void setExtended(boolean extended) {
+        this.extended = extended;
+    }
 
     public String getId() {
         return id;
