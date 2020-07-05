@@ -1,11 +1,7 @@
 package ru.netology.domain;
 
 public class PostVk {
-    private String id;
     private String name;
-    private String ownerId;
-    private String authorId;
-    private String createdBy;
     private String image;
     private String imageUrl;
     private String date;
@@ -14,6 +10,10 @@ public class PostVk {
     private String report;
     private String domain;
     private String querySearch;
+
+    private int id;
+    private int authorId;
+    private int createdBy;
     private int replyOwnerId;
     private int replyPostId;
     private int repostsQuantity;
@@ -88,11 +88,11 @@ public class PostVk {
         this.extended = extended;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -104,27 +104,19 @@ public class PostVk {
         this.name = name;
     }
 
-    public String getOwnerId() {
-        return ownerId;
-    }
-
-    public void setOwnerId(String ownerId) {
-        this.ownerId = ownerId;
-    }
-
-    public String getAuthorId() {
+    public int getAuthorId() {
         return authorId;
     }
 
-    public void setAuthorId(String authorId) {
+    public void setAuthorId(int authorId) {
         this.authorId = authorId;
     }
 
-    public String getCreatedBy() {
+    public int getCreatedBy() {
         return createdBy;
     }
 
-    public void setCreatedBy(String createdBy) {
+    public void setCreatedBy(int createdBy) {
         this.createdBy = createdBy;
     }
 
