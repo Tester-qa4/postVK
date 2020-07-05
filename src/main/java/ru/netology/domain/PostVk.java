@@ -32,6 +32,7 @@ public class PostVk {
     private boolean ownersOnly;
     private boolean extended;
 
+
     public String getDomain() {
         return domain;
     }
