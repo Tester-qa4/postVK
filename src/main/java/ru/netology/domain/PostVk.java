@@ -23,6 +23,7 @@ public class PostVk {
     private int ownersId;
     private int countSearch;
     private int ofset;
+    private int likes;
     private boolean friendsOlly;
     private boolean canPin;
     private boolean canDelete;
@@ -159,6 +160,14 @@ public class PostVk {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
     }
 
     public String getDate() {
