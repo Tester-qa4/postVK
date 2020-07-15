@@ -32,7 +32,12 @@ public class PostVk {
     private boolean markedAsAds;
     private boolean ownersOnly;
     private boolean extended;
-
+    private domain.CommentsInfo commentsInfo;
+    private domain.LikesInfo likesInfo;
+    private domain.Geo geo;
+    private domain.PostSource postSource;
+    private domain.RepostsInfo repostsInfo;
+    private domain.ViewsQuantity viewsQuantity;
 
     public String getDomain() {
         return domain;
